@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\bin\Debug\SetOperationsInHashSet.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\bin\Debug\SetOperationsInHashSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\bin\Debug\SetOperationsInHashSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\obj\Debug\SetOperationsInHashSet.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\obj\Debug\SetOperationsInHashSet.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\obj\Debug\SetOperationsInHashSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\obj\Debug\SetOperationsInHashSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section07\SetOperationsInHashSet\obj\Debug\SetOperationsInHashSet.exe.config

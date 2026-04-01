@@ -1,0 +1,7 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\bin\Debug\PriorityQueue.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\bin\Debug\PriorityQueue.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\bin\Debug\PriorityQueue.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\obj\Debug\PriorityQueue.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\obj\Debug\PriorityQueue.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\obj\Debug\PriorityQueue.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section22\PriorityQueue\obj\Debug\PriorityQueue.pdb

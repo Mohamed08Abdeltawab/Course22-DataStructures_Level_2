@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\bin\Debug\Arrays.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\bin\Debug\Arrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\bin\Debug\Arrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\obj\Debug\Arrays.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\obj\Debug\Arrays.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\obj\Debug\Arrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\obj\Debug\Arrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section15\Arrays\obj\Debug\Arrays.exe.config

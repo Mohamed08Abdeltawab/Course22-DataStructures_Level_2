@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\bin\Debug\HashSet.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\bin\Debug\HashSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\bin\Debug\HashSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\obj\Debug\HashSet.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\obj\Debug\HashSet.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\obj\Debug\HashSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\obj\Debug\HashSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section06\HashSet\obj\Debug\HashSet.exe.config

@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\bin\Debug\Dictionary.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\bin\Debug\Dictionary.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\bin\Debug\Dictionary.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\obj\Debug\Dictionary.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\obj\Debug\Dictionary.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\obj\Debug\Dictionary.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section05\Dictionary\obj\Debug\Dictionary.exe.config

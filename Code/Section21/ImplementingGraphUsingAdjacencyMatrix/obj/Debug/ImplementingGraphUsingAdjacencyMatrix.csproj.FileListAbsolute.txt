@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\bin\Debug\ImplementingGraphUsingAdjacencyMatrix.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\bin\Debug\ImplementingGraphUsingAdjacencyMatrix.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\bin\Debug\ImplementingGraphUsingAdjacencyMatrix.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\obj\Debug\ImplementingGraphUsingAdjacencyMatrix.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\obj\Debug\ImplementingGraphUsingAdjacencyMatrix.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\obj\Debug\ImplementingGraphUsingAdjacencyMatrix.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\obj\Debug\ImplementingGraphUsingAdjacencyMatrix.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section21\ImplementingGraphUsingAdjacencyMatrix\obj\Debug\ImplementingGraphUsingAdjacencyMatrix.exe.config

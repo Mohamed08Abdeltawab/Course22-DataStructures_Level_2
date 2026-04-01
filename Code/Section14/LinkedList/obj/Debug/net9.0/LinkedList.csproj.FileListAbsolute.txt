@@ -1,0 +1,15 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\bin\Debug\net9.0\LinkedList.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\bin\Debug\net9.0\LinkedList.deps.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\bin\Debug\net9.0\LinkedList.runtimeconfig.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\bin\Debug\net9.0\LinkedList.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\bin\Debug\net9.0\LinkedList.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.AssemblyInfoInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.AssemblyInfo.cs
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.sourcelink.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\refint\LinkedList.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\LinkedList.genruntimeconfig.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section14\LinkedList\obj\Debug\net9.0\ref\LinkedList.dll

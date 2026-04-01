@@ -1,0 +1,7 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\bin\Debug\ISet1.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\bin\Debug\ISet1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\bin\Debug\ISet1.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\obj\Debug\ISet1.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\obj\Debug\ISet1.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\obj\Debug\ISet1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\ISet1\obj\Debug\ISet1.pdb

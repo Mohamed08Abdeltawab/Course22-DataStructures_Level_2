@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\bin\Debug\SortedSet.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\bin\Debug\SortedSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\bin\Debug\SortedSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\obj\Debug\SortedSet.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\obj\Debug\SortedSet.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\obj\Debug\SortedSet.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\obj\Debug\SortedSet.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section10\SortedSet\obj\Debug\SortedSet.exe.config

@@ -1,0 +1,7 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\bin\Debug\IDectionary1.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\bin\Debug\IDectionary1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\bin\Debug\IDectionary1.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\obj\Debug\IDectionary1.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\obj\Debug\IDectionary1.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\obj\Debug\IDectionary1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IDectionary1\obj\Debug\IDectionary1.pdb

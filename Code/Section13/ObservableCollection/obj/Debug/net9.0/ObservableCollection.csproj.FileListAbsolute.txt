@@ -1,0 +1,15 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\bin\Debug\net9.0\ObservableCollection.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\bin\Debug\net9.0\ObservableCollection.deps.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\bin\Debug\net9.0\ObservableCollection.runtimeconfig.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\bin\Debug\net9.0\ObservableCollection.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\bin\Debug\net9.0\ObservableCollection.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.AssemblyInfoInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.AssemblyInfo.cs
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.sourcelink.json
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\refint\ObservableCollection.dll
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ObservableCollection.genruntimeconfig.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section13\ObservableCollection\obj\Debug\net9.0\ref\ObservableCollection.dll

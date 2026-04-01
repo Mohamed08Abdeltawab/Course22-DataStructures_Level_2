@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\bin\Debug\BitArrays.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\bin\Debug\BitArrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\bin\Debug\BitArrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\obj\Debug\BitArrays.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\obj\Debug\BitArrays.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\obj\Debug\BitArrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\obj\Debug\BitArrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section16\BitArrays\obj\Debug\BitArrays.exe.config

@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\bin\Debug\JaggedArrays.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\bin\Debug\JaggedArrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\bin\Debug\JaggedArrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\obj\Debug\JaggedArrays.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\obj\Debug\JaggedArrays.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\obj\Debug\JaggedArrays.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\obj\Debug\JaggedArrays.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section17\JaggedArrays\obj\Debug\JaggedArrays.exe.config

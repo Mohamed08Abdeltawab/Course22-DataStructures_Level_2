@@ -1,0 +1,8 @@
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\bin\Debug\IComparable1.exe.config
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\bin\Debug\IComparable1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\bin\Debug\IComparable1.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\obj\Debug\IComparable1.csproj.AssemblyReference.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\obj\Debug\IComparable1.csproj.CoreCompileInputs.cache
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\obj\Debug\IComparable1.exe
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\obj\Debug\IComparable1.pdb
+C:\Users\ma705\Desktop\Course22-DataStructures_Level_2\Code\Section19\IComparable1\obj\Debug\IComparable1.exe.config
