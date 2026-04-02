@@ -1,0 +1,16 @@
+In Course 12 we covered the following topics and data structures:
+
+Time & Space Complexity - Big O Notation - Part 1
+Binary Data Structure
+Array Data Structure
+Matrix Data Structure
+Stack Data Structure
+Vector Data Structure
+Queue Data Structure
+Singly Linked List
+Doubly Linked List
+Circular Linked List
+Abstract Data Type (ADT)
+Map
+Union
+Its important to review them all before you start with this course.
