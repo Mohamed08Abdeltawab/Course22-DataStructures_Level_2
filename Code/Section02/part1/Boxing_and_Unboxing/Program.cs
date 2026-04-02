@@ -21,6 +21,11 @@ namespace Boxing_and_Unboxing
             Console.WriteLine("Object Type: " + objType);
             #endregion
 
+            #region Unboxing
+            //unboxing is the process of converting an object type back to a value type. to unbox an object type, you need to cast it back to the original value type.
+            int unboxedValType = (int)objType; // Unboxing
+            Console.WriteLine("Unboxed Value: " + unboxedValType);
+            #endregion
 
         }
     }
