@@ -197,83 +197,94 @@ namespace Collections_Lists
 
                         #endregion
             */
+            /*
+                        #region Working with a List of Custom Objects
+                        List<Person> people = new List<Person>()
+                        {
+                            new Person("Mohamed",14),
+                            new Person("Ahmed", 20),
+                            new Person("Sara", 25),
+                            new Person("Ali", 30),
+                            new Person("Mona", 35),
+                            new Person("Omar", 40) ,
+                            new Person("Laila", 45),
+                            new Person("Youssef", 50),
+                        };
 
-            #region Working with a List of Custom Objects
-            List<Person> people = new List<Person>()
-            {
-                new Person("Mohamed",14),
-                new Person("Ahmed", 20),
-                new Person("Sara", 25),
-                new Person("Ali", 30),
-                new Person("Mona", 35),
-                new Person("Omar", 40) ,
-                new Person("Laila", 45),
-                new Person("Youssef", 50),
-            };
+                        //current list of people
+                        Console.WriteLine("Current List of People:");
+                        foreach(Person person in people)
+                        {
+                            Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+                        }
 
-            //current list of people
-            Console.WriteLine("Current List of People:");
-            foreach(Person person in people)
-            {
-                Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
-            }
+                        //using Find
+                        Person firstOlderThan30 = people.Find(p => p.Age > 30);
+                        Console.WriteLine("\nFinding the first person older than 30:" + firstOlderThan30.Name);
 
-            //using Find
-            Person firstOlderThan30 = people.Find(p => p.Age > 30);
-            Console.WriteLine("\nFinding the first person older than 30:" + firstOlderThan30.Name);
+                        //find and update age that name is Alice
+                        Person searchResult = people.Find(p => p.Name == "Alice");
+                        if (searchResult != null)
+                        {
+                            searchResult.Age = 28;
+                            Console.WriteLine($"\nUpdated Alice's age to: {searchResult.Age}");
+                        }
+                        else
+                            Console.WriteLine("There is no person with Name 'Alice'");
 
-            //find and update age that name is Alice
-            Person searchResult = people.Find(p => p.Name == "Alice");
-            if (searchResult != null)
-            {
-                searchResult.Age = 28;
-                Console.WriteLine($"\nUpdated Alice's age to: {searchResult.Age}");
-            }
-            else
-                Console.WriteLine("There is no person with Name 'Alice'");
+                            //using FindAll
+                            List<Person> PersopleOlderThan30 = people.FindAll(p => p.Age > 30);
+                        Console.WriteLine("People older than 30: ");
+                        foreach (Person person1 in PersopleOlderThan30)
+                        {
+                            Console.WriteLine($"Name: {person1.Name}, Age: {person1.Age}");
+                        }
 
-                //using FindAll
-                List<Person> PersopleOlderThan30 = people.FindAll(p => p.Age > 30);
-            Console.WriteLine("People older than 30: ");
-            foreach (Person person1 in PersopleOlderThan30)
-            {
-                Console.WriteLine($"Name: {person1.Name}, Age: {person1.Age}");
-            }
-
-            //using Any
-            bool anyPersonYoungerThan20 = people.Any(p => p.Age < 20);
-            Console.WriteLine("\nIs there any person younger than 20? " + anyPersonYoungerThan20);
-
-
-            //using Exist
-            bool anyPersonOver40 = people.Any(p => p.Age > 40);
-            Console.WriteLine("\nIs there any person Over than 40? " + anyPersonYoungerThan20);
+                        //using Any
+                        bool anyPersonYoungerThan20 = people.Any(p => p.Age < 20);
+                        Console.WriteLine("\nIs there any person younger than 20? " + anyPersonYoungerThan20);
 
 
-            //using Removing 
-            people.RemoveAll(p => p.Age > 40);
-            Console.WriteLine("\nList of People after removing those older than 40:");
+                        //using Exist
+                        bool anyPersonOver40 = people.Any(p => p.Age > 40);
+                        Console.WriteLine("\nIs there any person Over than 40? " + anyPersonYoungerThan20);
 
-            foreach (Person person in people)
-            {
-                Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
-            }
+
+                        //using Removing 
+                        people.RemoveAll(p => p.Age > 40);
+                        Console.WriteLine("\nList of People after removing those older than 40:");
+
+                        foreach (Person person in people)
+                        {
+                            Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+                        }
+                        #endregion
+            */
+
+            #region Converting a List to an Array
+            List<int>numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+            int[] numbersArray = numbers.ToArray();
+            Console.WriteLine("Array elements: " + string.Join(", " , numbersArray));
+
             #endregion
 
 
+
         }
 
+        /*
+                public class Person
+                {
+                    public string Name { get; set; }
+                    public int Age { get; set; }
 
-        public class Person
-        {
-            public string Name { get; set; }
-            public int Age { get; set; }
-
-            public Person(string name, int age)
-            {
-                this.Name = name;
-                this.Age = age;
-            }
-        }
+                    public Person(string name, int age)
+                    {
+                        this.Name = name;
+                        this.Age = age;
+                    }
+                }
+        */
     }
 }
