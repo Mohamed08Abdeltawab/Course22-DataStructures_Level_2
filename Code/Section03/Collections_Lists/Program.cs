@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -112,22 +113,41 @@ namespace Collections_Lists
                         Console.WriteLine("Count: " + numbers.Count());
                         #endregion
             */
+            /*
+                        #region Filtering Data with LINQ in C# Using List
+                        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                        Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
 
-            #region Filtering Data with LINQ in C# Using List
+                        //using LINQ to filter data
+                        //where -> is used to filter data based on a condition and it returns a new collection that contains only the elements that satisfy the condition
+                        Console.WriteLine("Event Numbers: " + string.Join(", ",numbers.Where(n => n % 2 == 0)));
+                        Console.WriteLine("Odd Numbers: " + string.Join(", ", numbers.Where(n => n % 2 != 0)));
+                        //Where (n => n) used int (int,bool) and return int of value based on bool value
+                        Console.WriteLine("Numbers Greater than 5: " + string.Join(", ", numbers.Where(n => n > 5)));
+                        //Where (n,index) used int (int,int,bool) and return int of n and used index from 0 to end based on bool value
+                        Console.WriteLine("Every Second Number: " + string.Join(", ", numbers.Where((n,index) => index % 2 == 1 )));//value in (n) and index in (index) if true then add (n) to the result
+                        Console.WriteLine("Numbers Between 3 and 8: " + string.Join(", ", numbers.Where(n => n > 3 && n<8)));
+                        #endregion
+            */
+
+
+            #region Sorting a List in C# Using Various Methods
             List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
 
-            //using LINQ to filter data
-            //where -> is used to filter data based on a condition and it returns a new collection that contains only the elements that satisfy the condition
-            Console.WriteLine("Event Numbers: " + string.Join(", ",numbers.Where(n => n % 2 == 0)));
-            Console.WriteLine("Odd Numbers: " + string.Join(", ", numbers.Where(n => n % 2 != 0)));
-            //Where (n => n) used int (int,bool) and return int of value based on bool value
-            Console.WriteLine("Numbers Greater than 5: " + string.Join(", ", numbers.Where(n => n > 5)));
-            //Where (n,index) used int (int,int,bool) and return int of n and used index from 0 to end based on bool value
-            Console.WriteLine("Every Second Number: " + string.Join(", ", numbers.Where((n,index) => index % 2 == 1 )));//value in (n) and index in (index) if true then add (n) to the result
-            Console.WriteLine("Numbers Between 3 and 8: " + string.Join(", ", numbers.Where(n => n > 3 && n<8)));
-            #endregion
+            //.Sort () method is used to sort the list in ascending order
+            numbers.Sort();
+            Console.WriteLine("Sorted List using Sort(Ascending): " + string.Join(", ", numbers));
 
+            //.reverse () method is used to sort the list in descending order
+            numbers.Reverse();
+            Console.WriteLine("Sorted List using Reverse(Descending): " + string.Join(", ", numbers));
+
+            //using LINQ to sort the list in ascending order
+            Console.WriteLine("Sorted List using OrderBy(Ascending)" + string.Join(",", numbers.OrderBy(n => n)));
+            Console.WriteLine("Sorted List using OrderByDescending(Descending)" + string.Join(",", numbers.OrderByDescending(n => n)));
+
+            #endregion
         }
     }
 }
