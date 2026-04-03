@@ -149,6 +149,7 @@ namespace Collections_Lists
 
                         #endregion
             */
+/*
 
             #region Exploring Contains, Exists, Find, FindAll, and Any with List of Integers
             List<int> numbers = new List<int> { 44, 22, -55, 666, 9, -6, 345, 11, 3, 3 };
@@ -171,8 +172,28 @@ namespace Collections_Lists
             //Any method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
             Console.WriteLine("Are there any numbers greater than 100 in the list? " + numbers.Any(n => n > 100));
             #endregion
+*/
 
+            #region Exploring Contains, Exists, Find, FindAll, and Any with List of Strings
+            List<string> words = new List<string> { "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew" };
+            Console.WriteLine("Items in the list: " + string.Join(", ", words));
 
+            //Contains
+            Console.WriteLine("List contains 'apple': " + words.Contains("apple"));
+
+            //Exist
+            Console.WriteLine("List contains a word of length 5: " + words.Exists(w => w.Length ==5));
+
+            //Find
+            Console.WriteLine("First word longer than 5 characters: " + words.Find(word => word.Length > 5));
+
+            //Find All
+            Console.WriteLine("Words longer than 5 characters: " + string.Join(", ", words.FindAll(word => word.Length > 5)));
+
+            //Any
+            Console.WriteLine("Any words starting with 'a': " + words.Any(word => word.StartsWith("a")));
+
+            #endregion
         }
     }
 }
