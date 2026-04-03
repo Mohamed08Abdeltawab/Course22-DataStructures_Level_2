@@ -260,12 +260,23 @@ namespace Collections_Lists
                         }
                         #endregion
             */
-
+/*
             #region Converting a List to an Array
             List<int>numbers = new List<int> { 1, 2, 3, 4, 5 };
 
             int[] numbersArray = numbers.ToArray();
             Console.WriteLine("Array elements: " + string.Join(", " , numbersArray));
+
+            #endregion
+*/
+
+            #region Converting an Array to List
+            int[] numbersArray = new int[] { 1, 2, 3, 4, 5 };
+            List<int> numbersList = new List<int>(numbersArray);
+            //or using LINQ
+            //List<int> numbersList = numbersArray.ToList();
+            Console.WriteLine("List elements: " + string.Join(", ", numbersList));
+
 
             #endregion
 
