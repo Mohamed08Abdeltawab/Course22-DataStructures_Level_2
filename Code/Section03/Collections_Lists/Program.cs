@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -149,51 +150,130 @@ namespace Collections_Lists
 
                         #endregion
             */
-/*
+            /*
 
-            #region Exploring Contains, Exists, Find, FindAll, and Any with List of Integers
-            List<int> numbers = new List<int> { 44, 22, -55, 666, 9, -6, 345, 11, 3, 3 };
-            Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
+                        #region Exploring Contains, Exists, Find, FindAll, and Any with List of Integers
+                        List<int> numbers = new List<int> { 44, 22, -55, 666, 9, -6, 345, 11, 3, 3 };
+                        Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
 
-            //Contains method is used to check if a specific element exists in the list and it returns a boolean value (true or false)
-            Console.WriteLine("Does the list contain 22? " + numbers.Contains(22));
+                        //Contains method is used to check if a specific element exists in the list and it returns a boolean value (true or false)
+                        Console.WriteLine("Does the list contain 22? " + numbers.Contains(22));
 
-            //Exists method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
-            Console.WriteLine("Does the list contain any negative numbers? " + numbers.Exists(n => n < 0));
+                        //Exists method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
+                        Console.WriteLine("Does the list contain any negative numbers? " + numbers.Exists(n => n < 0));
 
-            //Find method is used to find the first element in the list that satisfies a specific condition and it returns the element if found,
-            //otherwise it returns the default value for the type (e.g., null for reference types, 0 for numeric types)
-            Console.WriteLine("First negative number in the list: " + numbers.Find(n => n < 0));
+                        //Find method is used to find the first element in the list that satisfies a specific condition and it returns the element if found,
+                        //otherwise it returns the default value for the type (e.g., null for reference types, 0 for numeric types)
+                        Console.WriteLine("First negative number in the list: " + numbers.Find(n => n < 0));
 
-            //FindAll method is used to find all elements in the list that satisfy a specific condition
-            //and it returns a new list that contains all the elements that satisfy the condition
-            Console.WriteLine("All negative numbers in the list: " + string.Join(", ", numbers.FindAll(n => n < 0)));
+                        //FindAll method is used to find all elements in the list that satisfy a specific condition
+                        //and it returns a new list that contains all the elements that satisfy the condition
+                        Console.WriteLine("All negative numbers in the list: " + string.Join(", ", numbers.FindAll(n => n < 0)));
 
-            //Any method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
-            Console.WriteLine("Are there any numbers greater than 100 in the list? " + numbers.Any(n => n > 100));
+                        //Any method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
+                        Console.WriteLine("Are there any numbers greater than 100 in the list? " + numbers.Any(n => n > 100));
+                        #endregion
+            */
+
+            /*
+                        #region Exploring Contains, Exists, Find, FindAll, and Any with List of Strings
+                        List<string> words = new List<string> { "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew" };
+                        Console.WriteLine("Items in the list: " + string.Join(", ", words));
+
+                        //Contains
+                        Console.WriteLine("List contains 'apple': " + words.Contains("apple"));
+
+                        //Exist
+                        Console.WriteLine("List contains a word of length 5: " + words.Exists(w => w.Length ==5));
+
+                        //Find
+                        Console.WriteLine("First word longer than 5 characters: " + words.Find(word => word.Length > 5));
+
+                        //Find All
+                        Console.WriteLine("Words longer than 5 characters: " + string.Join(", ", words.FindAll(word => word.Length > 5)));
+
+                        //Any
+                        Console.WriteLine("Any words starting with 'a': " + words.Any(word => word.StartsWith("a")));
+
+                        #endregion
+            */
+
+            #region Working with a List of Custom Objects
+            List<Person> people = new List<Person>()
+            {
+                new Person("Mohamed",14),
+                new Person("Ahmed", 20),
+                new Person("Sara", 25),
+                new Person("Ali", 30),
+                new Person("Mona", 35),
+                new Person("Omar", 40) ,
+                new Person("Laila", 45),
+                new Person("Youssef", 50),
+            };
+
+            //current list of people
+            Console.WriteLine("Current List of People:");
+            foreach(Person person in people)
+            {
+                Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+            }
+
+            //using Find
+            Person firstOlderThan30 = people.Find(p => p.Age > 30);
+            Console.WriteLine("\nFinding the first person older than 30:" + firstOlderThan30.Name);
+
+            //find and update age that name is Alice
+            Person searchResult = people.Find(p => p.Name == "Alice");
+            if (searchResult != null)
+            {
+                searchResult.Age = 28;
+                Console.WriteLine($"\nUpdated Alice's age to: {searchResult.Age}");
+            }
+            else
+                Console.WriteLine("There is no person with Name 'Alice'");
+
+                //using FindAll
+                List<Person> PersopleOlderThan30 = people.FindAll(p => p.Age > 30);
+            Console.WriteLine("People older than 30: ");
+            foreach (Person person1 in PersopleOlderThan30)
+            {
+                Console.WriteLine($"Name: {person1.Name}, Age: {person1.Age}");
+            }
+
+            //using Any
+            bool anyPersonYoungerThan20 = people.Any(p => p.Age < 20);
+            Console.WriteLine("\nIs there any person younger than 20? " + anyPersonYoungerThan20);
+
+
+            //using Exist
+            bool anyPersonOver40 = people.Any(p => p.Age > 40);
+            Console.WriteLine("\nIs there any person Over than 40? " + anyPersonYoungerThan20);
+
+
+            //using Removing 
+            people.RemoveAll(p => p.Age > 40);
+            Console.WriteLine("\nList of People after removing those older than 40:");
+
+            foreach (Person person in people)
+            {
+                Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+            }
             #endregion
-*/
 
-            #region Exploring Contains, Exists, Find, FindAll, and Any with List of Strings
-            List<string> words = new List<string> { "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew" };
-            Console.WriteLine("Items in the list: " + string.Join(", ", words));
 
-            //Contains
-            Console.WriteLine("List contains 'apple': " + words.Contains("apple"));
+        }
 
-            //Exist
-            Console.WriteLine("List contains a word of length 5: " + words.Exists(w => w.Length ==5));
 
-            //Find
-            Console.WriteLine("First word longer than 5 characters: " + words.Find(word => word.Length > 5));
+        public class Person
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
 
-            //Find All
-            Console.WriteLine("Words longer than 5 characters: " + string.Join(", ", words.FindAll(word => word.Length > 5)));
-
-            //Any
-            Console.WriteLine("Any words starting with 'a': " + words.Any(word => word.StartsWith("a")));
-
-            #endregion
+            public Person(string name, int age)
+            {
+                this.Name = name;
+                this.Age = age;
+            }
         }
     }
 }
