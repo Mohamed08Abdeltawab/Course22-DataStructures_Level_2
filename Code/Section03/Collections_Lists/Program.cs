@@ -53,27 +53,52 @@ namespace Collections_Lists
                         Console.WriteLine("after insert 3,4,5 at index 3: " + string.Join(", ", numbers));
                         #endregion
             */
+            /*
+                        #region Remove Items from List
 
-            #region Remove Items from List
-
-            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            //removing by item
-            numbers.Remove(1);
-            Console.WriteLine("after removing 1: " + string.Join(", ", numbers));
+                        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                        //removing by item
+                        numbers.Remove(1);
+                        Console.WriteLine("after removing 1: " + string.Join(", ", numbers));
 
 
-            //removing by index
-            numbers.RemoveAt(0);//remove item at index 0
-            Console.WriteLine("after removing item at index 0: " + string.Join(", ", numbers));
+                        //removing by index
+                        numbers.RemoveAt(0);//remove item at index 0
+                        Console.WriteLine("after removing item at index 0: " + string.Join(", ", numbers));
 
-            //removing base on condition
-            numbers.RemoveAll(x => x % 2 == 0);//remove all even numbers
-            Console.WriteLine("after removing all even numbers: " + string.Join(", ", numbers));
+                        //removing base on condition
+                        numbers.RemoveAll(x => x % 2 == 0);//remove all even numbers
+                        Console.WriteLine("after removing all even numbers: " + string.Join(", ", numbers));
 
-            //remove all
-            numbers.Clear();
-            Console.WriteLine("after removing all items: " + string.Join(", ", numbers));
+                        //remove all
+                        numbers.Clear();
+                        Console.WriteLine("after removing all items: " + string.Join(", ", numbers));
+                        #endregion
+            */
+
+            #region Looping Through a List in C#
+            List<int> numbers = new List<int> { 1,2,3,4,5 };
+            Console.WriteLine("Number of Items in the list: " + string.Join(", ",numbers));
+
+            //using for loop
+            Console.Write("\nusing for loop: ");
+            for (int i =0; i < numbers.Count; i++)
+            {
+                Console.Write(numbers[i] + " ");
+            }
+
+            //using foreach loop
+            Console.WriteLine("\nusing foreach loop: ");
+            foreach(int number in numbers)
+            {
+                Console.Write(number + " ");
+            }
+
+            //using lambda expression with ForEach method
+            Console.WriteLine("\nusing lambda expression with ForEach method: ");
+            numbers.ForEach(number => Console.Write(number + " "));
             #endregion
+
 
         }
     }
