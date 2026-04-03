@@ -130,24 +130,49 @@ namespace Collections_Lists
                         #endregion
             */
 
+            /*
+                        #region Sorting a List in C# Using Various Methods
+                        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                        Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
 
-            #region Sorting a List in C# Using Various Methods
-            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                        //.Sort () method is used to sort the list in ascending order
+                        numbers.Sort();
+                        Console.WriteLine("Sorted List using Sort(Ascending): " + string.Join(", ", numbers));
+
+                        //.reverse () method is used to sort the list in descending order
+                        numbers.Reverse();
+                        Console.WriteLine("Sorted List using Reverse(Descending): " + string.Join(", ", numbers));
+
+                        //using LINQ to sort the list in ascending order
+                        Console.WriteLine("Sorted List using OrderBy(Ascending)" + string.Join(",", numbers.OrderBy(n => n)));
+                        Console.WriteLine("Sorted List using OrderByDescending(Descending)" + string.Join(",", numbers.OrderByDescending(n => n)));
+
+                        #endregion
+            */
+
+            #region Exploring Contains, Exists, Find, FindAll, and Any with List of Integers
+            List<int> numbers = new List<int> { 44, 22, -55, 666, 9, -6, 345, 11, 3, 3 };
             Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
 
-            //.Sort () method is used to sort the list in ascending order
-            numbers.Sort();
-            Console.WriteLine("Sorted List using Sort(Ascending): " + string.Join(", ", numbers));
+            //Contains method is used to check if a specific element exists in the list and it returns a boolean value (true or false)
+            Console.WriteLine("Does the list contain 22? " + numbers.Contains(22));
 
-            //.reverse () method is used to sort the list in descending order
-            numbers.Reverse();
-            Console.WriteLine("Sorted List using Reverse(Descending): " + string.Join(", ", numbers));
+            //Exists method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
+            Console.WriteLine("Does the list contain any negative numbers? " + numbers.Exists(n => n < 0));
 
-            //using LINQ to sort the list in ascending order
-            Console.WriteLine("Sorted List using OrderBy(Ascending)" + string.Join(",", numbers.OrderBy(n => n)));
-            Console.WriteLine("Sorted List using OrderByDescending(Descending)" + string.Join(",", numbers.OrderByDescending(n => n)));
+            //Find method is used to find the first element in the list that satisfies a specific condition and it returns the element if found,
+            //otherwise it returns the default value for the type (e.g., null for reference types, 0 for numeric types)
+            Console.WriteLine("First negative number in the list: " + numbers.Find(n => n < 0));
 
+            //FindAll method is used to find all elements in the list that satisfy a specific condition
+            //and it returns a new list that contains all the elements that satisfy the condition
+            Console.WriteLine("All negative numbers in the list: " + string.Join(", ", numbers.FindAll(n => n < 0)));
+
+            //Any method is used to check if any element in the list satisfies a specific condition and it returns a boolean value (true or false)
+            Console.WriteLine("Are there any numbers greater than 100 in the list? " + numbers.Any(n => n > 100));
             #endregion
+
+
         }
     }
 }
