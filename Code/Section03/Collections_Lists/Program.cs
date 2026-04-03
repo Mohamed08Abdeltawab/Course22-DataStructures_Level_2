@@ -75,30 +75,42 @@ namespace Collections_Lists
                         Console.WriteLine("after removing all items: " + string.Join(", ", numbers));
                         #endregion
             */
+            /*
+                        #region Looping Through a List in C#
+                        List<int> numbers = new List<int> { 1,2,3,4,5 };
+                        Console.WriteLine("Number of Items in the list: " + string.Join(", ",numbers));
 
-            #region Looping Through a List in C#
-            List<int> numbers = new List<int> { 1,2,3,4,5 };
-            Console.WriteLine("Number of Items in the list: " + string.Join(", ",numbers));
+                        //using for loop
+                        Console.Write("\nusing for loop: ");
+                        for (int i =0; i < numbers.Count; i++)
+                        {
+                            Console.Write(numbers[i] + " ");
+                        }
 
-            //using for loop
-            Console.Write("\nusing for loop: ");
-            for (int i =0; i < numbers.Count; i++)
-            {
-                Console.Write(numbers[i] + " ");
-            }
+                        //using foreach loop
+                        Console.WriteLine("\nusing foreach loop: ");
+                        foreach(int number in numbers)
+                        {
+                            Console.Write(number + " ");
+                        }
 
-            //using foreach loop
-            Console.WriteLine("\nusing foreach loop: ");
-            foreach(int number in numbers)
-            {
-                Console.Write(number + " ");
-            }
+                        //using lambda expression with ForEach method
+                        Console.WriteLine("\nusing lambda expression with ForEach method: ");
+                        numbers.ForEach(number => Console.Write(number + " "));
+                        #endregion
+            */
 
-            //using lambda expression with ForEach method
-            Console.WriteLine("\nusing lambda expression with ForEach method: ");
-            numbers.ForEach(number => Console.Write(number + " "));
+            #region Aggregating Data Using LINQ with List
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+            Console.WriteLine("Number of Items in the list: " + string.Join(", ", numbers));
+            //using LINQ to calculate the sum of all numbers in the list
+
+            Console.WriteLine("Sum: " + numbers.Sum());
+            Console.WriteLine("Average: " + numbers.Average());
+            Console.WriteLine("Minimum: " + numbers.Min());
+            Console.WriteLine("Maximum: " + numbers.Max());
+            Console.WriteLine("Count: " + numbers.Count());
             #endregion
-
 
         }
     }
