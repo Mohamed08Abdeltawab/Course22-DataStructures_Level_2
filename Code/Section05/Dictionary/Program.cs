@@ -53,6 +53,39 @@ namespace Dictionary
             }
 
             #endregion
+
+
+            #region Utilizing LINQ with Dictionaries
+            Console.WriteLine("\n\nusing linq");
+
+            var filteredFruit = fruitBasket.Where(kpv => kpv.Value > 3);
+            Console.WriteLine("\n\nitem value big than 3: \n");
+            foreach(var item in filteredFruit)
+            {
+                Console.WriteLine($"Fruit: {item.Key}, Quantity: {item.Value}");
+            }
+
+            //sort
+            var sortedByQuantity = fruitBasket.OrderBy(kpv => kpv.Value);
+            Console.WriteLine("\n\nsorted Fruit by value");
+            foreach (var item in sortedByQuantity)
+            {
+                Console.WriteLine($"Fruit: {item.Key}, Quantity: {item.Value}");
+            }
+
+            //sort
+            var sortedByQuantityDesc = fruitBasket.OrderByDescending(kpv => kpv.Value);
+            Console.WriteLine("\n\nsorted Fruit by value Desc");
+            foreach (var item in sortedByQuantityDesc)
+            {
+                Console.WriteLine($"Fruit: {item.Key}, Quantity: {item.Value}");
+            }
+
+            //total
+            var totalQuantity = fruitBasket.Sum(kpv => kpv.Value);
+            Console.WriteLine("\n\nTotal Fruit Quantity " + totalQuantity);
+
+            #endregion
         }
     }
 }
