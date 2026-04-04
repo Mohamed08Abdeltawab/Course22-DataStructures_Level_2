@@ -40,6 +40,19 @@ namespace Dictionary
             }
             #endregion
 
+
+            #region TryGetValue Method in C# Dictionaries
+
+            if(fruitBasket.TryGetValue("Apple",out int appleQunatity))
+            {
+                Console.WriteLine($"\n\nApple Quantity: {appleQunatity}");
+            }
+            else
+            {
+                Console.WriteLine($"Apple not found in the basket");
+            }
+
+            #endregion
         }
     }
 }
