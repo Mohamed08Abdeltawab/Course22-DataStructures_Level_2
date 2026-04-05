@@ -86,6 +86,40 @@ namespace Dictionary
             Console.WriteLine("\n\nTotal Fruit Quantity " + totalQuantity);
 
             #endregion
+
+            #region Advanced LINQ Queries with Dictionaries
+            Dictionary<string,string>fruitsCategory = new Dictionary<string, string>()
+            {
+                { "Apple", "Tree" },
+                { "Banana", "Herb" },
+                { "Cherry", "Tree" },
+                { "Strawberry", "Bush" },
+                { "Raspberry", "Bush" }
+            };
+
+            //group by category
+            var groupedFruits = fruitsCategory.GroupBy(kpv => kpv.Value);
+            Console.WriteLine("\n\nGrouped Fruits by Category:");
+            foreach(var group in groupedFruits)
+            {
+                //key is not key of dictionary is key of ordering 
+                Console.WriteLine($"\nCategory: {group.Key}");
+                foreach (var item in group)
+                {
+                    Console.WriteLine($"Fruit: {item.Key}");//key is not of dictionary is keh of ordering
+                }
+            }
+
+            var sortedFilteredFruits = fruitBasket.Where(kpv => kpv.Value > 3).OrderBy(kpv => kpv.Value)
+                .Select(kpv => new { kpv.Key, kpv.Value });
+
+            Console.WriteLine("\n\nFiltering, Sorting, and Transforming\n:");
+            foreach (var fruit in sortedFilteredFruits)
+            {
+                Console.WriteLine($"Fruit: {fruit.Key}, Quantity: {fruit.Value}");
+            }
+
+            #endregion
         }
     }
 }
