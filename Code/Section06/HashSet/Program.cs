@@ -28,6 +28,26 @@ namespace HashSet
                 Console.WriteLine(fruit);
             }
             #endregion
+
+            #region Checking for Existence in HashSet
+            HashSet<string> fruits2 = new HashSet<string>() {"Apple", "Banana", "Cherry" };
+            if (fruits2.Contains("Apple"))
+            {
+                Console.WriteLine("Apple is in HashSet");
+            }
+            else
+            {
+                Console.WriteLine("Apple is not in HashSet");
+            }
+            if (fruits2.Contains("Watermelon"))
+            {
+                Console.WriteLine("Watermelon is in HashSet");
+            }
+            else
+            {
+                Console.WriteLine("Watermelon is not in HashSet");
+            }
+            #endregion
         }
     }
 }
