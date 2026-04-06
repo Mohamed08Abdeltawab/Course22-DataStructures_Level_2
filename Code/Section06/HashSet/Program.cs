@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -105,6 +106,27 @@ namespace HashSet
             foreach (var number in GreaterThan5)
             {
                 Console.WriteLine(number);
+            }
+
+            #endregion
+
+
+            #region Using LINQ with HashSet Example 2
+            // Creating and populating a HashSet of strings
+            HashSet<string> names = new HashSet<string> { "Alice", "Bob", "Charlie", "Daisy", "Ethan", "Fiona" };
+
+            var startWtihC = names.Where(name => name.StartsWith("C"));
+            Console.WriteLine("\n\names that start with 'C'");
+            foreach(var name in startWtihC)
+            {
+                Console.WriteLine(name);
+            }
+
+            var longThan4 = names.Where(name => name.Length > 4);
+            Console.WriteLine("\n\nnames that long than 4:");
+            foreach (var name in longThan4)
+            {
+                Console.WriteLine(name);
             }
 
             #endregion
