@@ -48,6 +48,26 @@ namespace HashSet
                 Console.WriteLine("Watermelon is not in HashSet");
             }
             #endregion
+
+            #region Removing Elements from HashSet
+
+            Console.WriteLine("Hashset Item Count = " + fruits2.Count.ToString());
+
+            // Removing "Banana" from the HashSet
+            fruits2.Remove("Banana");
+
+            Console.WriteLine("\nHashset Item Count after removing Banana = " + fruits2.Count.ToString());
+            // Displaying the remaining elements
+            foreach (string fruit in fruits2)
+            {
+                Console.WriteLine(fruit);
+            }
+
+            //this will remove all elements
+            fruits.Clear();
+            Console.WriteLine("\nHashset Item Count after clear = " + fruits2.Count.ToString());
+
+            #endregion
         }
     }
 }
