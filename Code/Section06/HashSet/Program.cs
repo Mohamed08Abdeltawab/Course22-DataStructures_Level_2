@@ -85,6 +85,29 @@ namespace HashSet
                 Console.WriteLine(number);
             }
             #endregion
+
+
+
+            #region Using HashSet with LINQ Example 1
+            HashSet<int> numbers= new HashSet<int>(array) { 1,2,3,4,5,6,7,8,9,10 };
+            var evenNumber = numbers.Where(x => x % 2 == 0);
+
+            Console.WriteLine("Event numbers in hashSet:\n");
+            foreach(var number in evenNumber)
+            {
+                Console.WriteLine(number);
+            }
+
+            //greater than 5
+            var GreaterThan5 = numbers.Where(x => x > 5);
+
+            Console.WriteLine("numbers Greater than 5 in hashSet:\n");
+            foreach (var number in GreaterThan5)
+            {
+                Console.WriteLine(number);
+            }
+
+            #endregion
         }
     }
 }
