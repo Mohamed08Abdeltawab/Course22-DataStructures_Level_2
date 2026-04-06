@@ -68,6 +68,23 @@ namespace HashSet
             Console.WriteLine("\nHashset Item Count after clear = " + fruits2.Count.ToString());
 
             #endregion
+
+            #region  Using HashSet to Remove Duplicates
+            // Array with duplicate values
+            int[] array = new int[] { 1, 2, 2, 3, 4, 4, 5 };
+
+
+            // Initializing a HashSet with the array
+            //remove dublicates automaticly
+            HashSet<int> uniqueNumbers = new HashSet<int>(array);
+
+
+            // Displaying the unique elements
+            foreach (int number in uniqueNumbers)
+            {
+                Console.WriteLine(number);
+            }
+            #endregion
         }
     }
 }
