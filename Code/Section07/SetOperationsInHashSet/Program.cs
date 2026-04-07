@@ -26,6 +26,19 @@ namespace SetOperationsInHashSet
                 Console.WriteLine(item);
             }
             #endregion
+
+            #region Intersection Operation with HashSet in C#
+            //set1 : 1,2,3,4,5
+            //set2 : 3,4,5
+            //intersection : 3,4,5
+            set1.IntersectWith(set2);
+
+            Console.WriteLine("Intersection of sets:");
+            foreach(int item in set1)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
         }
     }
 }
