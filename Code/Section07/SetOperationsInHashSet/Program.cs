@@ -28,13 +28,29 @@ namespace SetOperationsInHashSet
             #endregion
 
             #region Intersection Operation with HashSet in C#
-            //set1 : 1,2,3,4,5
+            set1 = new HashSet<int> { 1, 2, 3 };
+
+            //set1 : 1,2,3
             //set2 : 3,4,5
-            //intersection : 3,4,5
+            //intersection : 3
             set1.IntersectWith(set2);
 
             Console.WriteLine("Intersection of sets:");
             foreach(int item in set1)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+
+
+            #region Difference Operation with HashSet in C#
+            set1 = new HashSet<int> { 1, 2, 3 };
+
+            //removing elements of set2 that in set1
+            set1.ExceptWith(set2);
+
+            Console.WriteLine("Difference of set1 - set2:");
+            foreach (int item in set1)
             {
                 Console.WriteLine(item);
             }
