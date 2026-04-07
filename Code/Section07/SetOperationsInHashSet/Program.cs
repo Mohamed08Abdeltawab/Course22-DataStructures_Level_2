@@ -55,6 +55,21 @@ namespace SetOperationsInHashSet
                 Console.WriteLine(item);
             }
             #endregion
+
+            #region Symmetric Difference Operation with HashSet in C#
+            set1 = new HashSet<int> { 1, 2, 3 };
+
+            //remove duoblicates that in two sets
+            //Retaining elements unique to each set using SymmetricExceptWith.
+            // Symmetric difference between set1 and set2
+            set1.SymmetricExceptWith(set2);
+
+            Console.WriteLine("Symetric difference o f sets:");
+            foreach (int item in set1)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
         }
     }
 }
