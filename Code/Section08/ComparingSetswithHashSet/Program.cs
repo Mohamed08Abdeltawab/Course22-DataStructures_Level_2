@@ -28,6 +28,15 @@ namespace ComparingSetswithHashSet
             Console.WriteLine("\nset1 is subset of set2: " + set1.IsSubsetOf(set2)); // True
             Console.WriteLine("set1 is subset of set3: " + set1.IsSubsetOf(set3));// False
             #endregion
+
+            #region Using IsSupersetOf with HashSet in C#
+            set1 = new HashSet<int> { 1, 2, 3, 4, 5 };
+            set2 = new HashSet<int> { 2, 3 };
+
+            // Check if set1 is a superset of set2 meaning all elements of set2 are in set1
+            //set1 is mother of set2
+            Console.WriteLine("\nset1 is a superset of set2: " + set1.IsSupersetOf(set2));
+            #endregion
         }
     }
 }
