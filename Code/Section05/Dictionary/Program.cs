@@ -120,6 +120,98 @@ namespace Dictionary
             }
 
             #endregion
+
+
+            Console.WriteLine("\n\nDisplayFunction:");
+            DictionaryInCSharp();
         }
+
+
+
+        public static void DictionaryInCSharp()
+        {
+            // 1. Initialization
+            // Creating a Dictionary to store Patient IDs (int) as Keys, and Names (string) as Values.
+            Dictionary<int, string> patients = new Dictionary<int, string>()
+        {
+            { 1, "Ahmed Ali" },
+            { 2, "Sara Mohamed" }
+        };
+
+            // 2. Adding Elements
+            // Method A: Using .Add()
+            // Caution: Throws an ArgumentException if the key already exists.
+            patients.Add(3, "Omar Khaled");
+
+            // Method B: Using Indexer []
+            // Safe: Adds the key if it doesn't exist, or updates the value if the key already exists (Upsert).
+            patients[4] = "Laila Hassan";
+
+            // 3. Accessing Elements
+            // Caution: Direct access throws a KeyNotFoundException if the key doesn't exist.
+            Console.WriteLine("Patient 1: " + patients[1]);
+
+            // 4. Safe Access (Best Practice)
+            // Using TryGetValue prevents exceptions, doesn't require double-checking, and is highly optimized.
+            if (patients.TryGetValue(5, out string patientName))
+            {
+                Console.WriteLine("Found Patient 5: " + patientName);
+            }
+            else
+            {
+                Console.WriteLine("Patient 5 does not exist in the system.");
+            }
+
+            // 5. Checking for Keys or Values
+            // ContainsKey is O(1) - Very fast hash lookup.
+            if (patients.ContainsKey(3))
+            {
+                Console.WriteLine("Key 3 exists in the dictionary.");
+            }
+
+            // ContainsValue is O(n) - Slower because it iterates through all values linearly.
+            bool hasAhmed = patients.ContainsValue("Ahmed Ali");
+
+            // 6. Updating an Element
+            // Just use the indexer with the existing key to overwrite the value.
+            patients[2] = "Sara Mohamed El-Sayed";
+
+            // 7. Removing an Element
+            // Returns true if successfully removed, false if the key wasn't found.
+            bool isRemoved = patients.Remove(3);
+
+            // 8. Iterating / Looping through the Dictionary
+            Console.WriteLine("\n--- All Patients List ---");
+
+            // Iterating over both Keys and Values using KeyValuePair struct.
+            foreach (KeyValuePair<int, string> kvp in patients)
+            {
+                Console.WriteLine($"ID: {kvp.Key}, Name: {kvp.Value}");
+            }
+
+            // Iterating over Keys only.
+            foreach (int id in patients.Keys)
+            {
+                // Execute logic using the ID
+            }
+
+            // Iterating over Values only.
+            foreach (string name in patients.Values)
+            {
+                // Execute logic using the Name
+            }
+
+            // 9. Useful LINQ and Properties
+            // Count: Gets the total number of key/value pairs contained in the Dictionary.
+            int totalPatients = patients.Count;
+
+            // Converting Dictionary Values (or Keys) to a List using LINQ.
+            List<string> patientNamesList = patients.Values.ToList();
+
+            // 10. Clearing the Dictionary
+            // Removes all keys and values from the Dictionary.
+            patients.Clear();
+        }
+
     }
 }
