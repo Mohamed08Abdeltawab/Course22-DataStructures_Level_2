@@ -32,7 +32,41 @@ namespace SortedList
             {
                 Console.WriteLine($"Key: {item.Key}, Value:{item.Value}");
             }
+            #endregion
 
+
+            #region LINQ with sortedList in C#
+
+            SortedList<int, string> sortedListNumber = new SortedList<int, string>()
+            {
+                {1,"One" },
+                {2,"Two" },
+                {3,"Three" },
+                {4,"Four" },
+            };
+
+
+            //use query linq
+            var queryExpressionsSyntax = from kvp in sortedListNumber
+                                         where kvp.Key > 1
+                                         select kvp;
+
+            Console.WriteLine("Query Expression Syntax Results:");
+            foreach(var item in queryExpressionsSyntax)
+            {
+                Console.WriteLine($"Key:{item.Key}, Value:{item.Value}");
+            }
+
+            //use query linq
+            var MethodSyntax = sortedListNumber.Where(kvp => kvp.Key > 1);
+
+            Console.WriteLine("Method Syntax Results:");
+            foreach (var item in MethodSyntax)
+            {
+                Console.WriteLine($"Key:{item.Key}, Value:{item.Value}");
+            }
+
+            #endregion
         }
 
     }
