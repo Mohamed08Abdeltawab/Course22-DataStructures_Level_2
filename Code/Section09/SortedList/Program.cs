@@ -101,6 +101,61 @@ namespace SortedList
             //}
 
             #endregion
+
+            #region Advance Complex Object Operations using Linq and Sotred List
+            SortedList<int, Employee> employees = new SortedList<int, Employee>
+            {
+                {1, new Employee("Alice","HR",50000) },
+                {2, new Employee("Bob","IT",70000) },
+                {3, new Employee("Charlie","HR",52000) },
+                {4, new Employee("Daisy","IT",80000) },
+                {5, new Employee("Ethan","Marketing",45000) }
+            };
+
+            var EmployeesWithITDepartment = employees
+                .Where(e => e.Value.Department == "IT")
+                .OrderByDescending(e => e.Value.Salary)
+                //select if not used is defualt reutrn parameter of emplyees that is sortedList have a Key and Value
+                //but you can used to return a spasific parameter so we used var as return type
+                //myby you dicided to select Name only then reutrn type is string not a sortedList like default
+                .Select(e => e.Value.Name);
+            
+            Console.WriteLine("\nIT Department Employees Name sorted by salary (Descending)");
+            foreach (var employeeName in EmployeesWithITDepartment)
+            {
+                Console.WriteLine(employeeName);
+            }
+
+
+            var EmployeesWithGreaterThan60000Salary = employees
+                .Where(e => e.Value.Salary > 60000)
+                .OrderBy(e => e.Value.Salary)
+                .Select(e => e.Value); //return value only 
+
+            Console.WriteLine("\nEmployees That have more than 60000 sorted by salary (Ascending)");
+            foreach (var employee in EmployeesWithGreaterThan60000Salary)
+            {
+                Console.WriteLine($"Name: {employee.Name}, Salary: {employee.Salary}");
+            }
+
+
+            #endregion
+
+        }
+
+        //Advance Complex Object Operations using Linq and Sotred List
+        public class Employee
+        {
+            public string Name { get; set; }
+            public string Department { get; set; }
+            public decimal Salary { get; set; }
+
+            public Employee(string name, string department, decimal salary)
+            {
+                Name = name;
+                Department = department;
+                Salary = salary;
+            }
         }
 
     }
