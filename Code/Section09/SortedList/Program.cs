@@ -67,6 +67,40 @@ namespace SortedList
             }
 
             #endregion
+
+
+            #region Advanced LINQ Usage with SortedList Grouping Elements
+            SortedList<int, string> sortedListFruites2 = new SortedList<int, string>()
+            {
+                {1, "Apple" },
+                {2, "Banana" },
+                {3, "Cherry" },
+                {4, "Date" },
+                {5, "Grape" },
+                {6, "Fig" },
+                {7, "Elderber" }
+            };
+
+            //group.key -> length 
+            var groups = sortedListFruites2.GroupBy(kvp => kvp.Value.Length);
+            Console.WriteLine("\nGrouping By the length of the value");
+            foreach (var group in groups)
+            {
+                Console.WriteLine($"Length: {group.Key}, Values: '{string.Join(", ", group.Select(kvp => kvp.Value))}'");
+            }
+
+            //another way
+            //foreach(var group in groups)
+            //{
+            //    Console.Write($"Length: {group.Key}, Values: ");
+            //    foreach(var item in group)
+            //    {
+            //        Console.Write(item.Value + ", ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
         }
 
     }
