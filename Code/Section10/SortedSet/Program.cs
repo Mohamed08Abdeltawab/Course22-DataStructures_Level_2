@@ -21,7 +21,7 @@ namespace SortedSet
             sortedSet1.Add(4);
 
             //display
-            Console.WriteLine("SortedSet elements:");
+            Console.WriteLine("\nSortedSet elements:");
             foreach(int element in sortedSet1)
             {
                 Console.WriteLine(element);
@@ -31,7 +31,7 @@ namespace SortedSet
             int target = 3;
             if(sortedSet1.Contains(target))
             {
-                Console.WriteLine($"\n Number {target} in the sortedSet.");
+                Console.WriteLine($"Number {target} in the sortedSet.");
             }
 
             //remove item in sortedSet
@@ -49,7 +49,7 @@ namespace SortedSet
 
             // Filtering elements greater than 2
             var filteredSet = sortedSet2.Where(x => x > 2);
-            Console.WriteLine("Filtered Set:");
+            Console.WriteLine("\nFiltered Set:");
             Console.WriteLine(string.Join(", ", filteredSet));
 
 
@@ -69,6 +69,19 @@ namespace SortedSet
             var descendingSet = sortedSet2.OrderByDescending(x => x);
             Console.WriteLine("Descending Sorted Set:");
             Console.WriteLine(string.Join(", ", descendingSet));
+            #endregion
+
+
+            #region Linq With Sorted Set Ex2
+            SortedSet<int> numbers = new SortedSet<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            // Find even numbers and project them to their square
+            var evenNumbersSquared = numbers.Where(x => x % 2 == 0).Select(x => x * x);
+            Console.WriteLine("\nSquares of even numbers:");
+            foreach (var item in evenNumbersSquared)
+            {
+                Console.Write(item + " ");
+            }
             #endregion
         }
     }
