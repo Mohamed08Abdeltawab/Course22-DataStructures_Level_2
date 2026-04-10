@@ -43,7 +43,33 @@ namespace SortedSet
             }
             #endregion
 
-            
+            #region Linq With Sorted Set Ex1
+            SortedSet<int> sortedSet2 = new SortedSet<int>() { 1, 2, 3, 4, 5 };
+
+
+            // Filtering elements greater than 2
+            var filteredSet = sortedSet2.Where(x => x > 2);
+            Console.WriteLine("Filtered Set:");
+            Console.WriteLine(string.Join(", ", filteredSet));
+
+
+            // Sum of all elements
+            var sum = sortedSet2.Sum();
+            Console.WriteLine("Sum of all elements: " + sum);
+
+
+            // Maximum and minimum elements
+            var maxElement = sortedSet2.Max();
+            var minElement = sortedSet2.Min();
+            Console.WriteLine("Maximum element: " + maxElement);
+            Console.WriteLine("Minimum element: " + minElement);
+
+
+            // Sorting the set in descending order
+            var descendingSet = sortedSet2.OrderByDescending(x => x);
+            Console.WriteLine("Descending Sorted Set:");
+            Console.WriteLine(string.Join(", ", descendingSet));
+            #endregion
         }
     }
 }
