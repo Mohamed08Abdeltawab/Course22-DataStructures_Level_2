@@ -90,3 +90,15 @@ for (int i = 0; i < arrayList.Count; i++)
 
 #endregion
 
+#region Counting occurrences of a specific element
+ArrayList arrayList2 = new ArrayList { 1, 2, 3, 2, 4, 2, 5 };
+
+int targetNumber = 2;
+
+var count = arrayList2.Cast<int>().Count(num => num == targetNumber);
+
+Console.WriteLine($"\n\nNumber of occurrences of {targetNumber} in the ArrayList: {count}");
+Console.ReadKey();
+
+
+#endregion
