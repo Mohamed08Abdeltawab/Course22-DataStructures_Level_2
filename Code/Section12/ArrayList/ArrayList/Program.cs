@@ -1,4 +1,25 @@
-﻿using System.Collections;
+﻿/* * DEFINITION:
+         * ArrayList is a non-generic collection that can store elements of ANY data type.
+         * It resides in the System.Collections namespace and resizes dynamically 
+         * as elements are added or removed.
+
+        ADVANTAGES (Pros):
+         * 1. Dynamic Resizing: It grows automatically when you add elements.
+         * 2. Heterogeneous: It can store mixed types (int, string, bool, etc.) in the same list.
+         * 3. Flexibility: Ideal for scenarios where you don't know the data types in advance.
+         * 
+         * 
+         * 
+         * DISADVANTAGES (Cons):
+         * 1. Performance Issues: It requires "Boxing" and "Unboxing" which consumes CPU power.
+         * 2. Not Type-Safe: Since it accepts everything, it is prone to runtime errors.
+         * 3. Older Technology: Replaced by List<T> (Generic collections) in modern C#.
+         
+
+*/
+
+
+using System.Collections;
 
 #region Working with ArrayList
 Console.WriteLine("\n\nHomogeneous ");
