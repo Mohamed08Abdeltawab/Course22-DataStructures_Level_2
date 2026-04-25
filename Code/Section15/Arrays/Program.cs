@@ -41,12 +41,34 @@ namespace Arrays
                 Console.WriteLine(number);
             }
 
-
+              
             // Searching for an element, this will return the index for the element you searched for.
             int index = Array.IndexOf(numbers2, 4);
             Console.WriteLine("\nIndex of 4: " + index);
 
             #endregion
+
+            #region Coping Arrays
+            int[] Original = { 1, 2, 3, 4, 5 };
+
+            int[] Copy = new int[Original.Length + 1];//if not the same length will be 0 or not tack the last element of the original array
+            Array.Copy(Original, Copy, Original.Length - 1);//take to length -1 to not take the last element of the original array
+
+            Console.WriteLine("Original array:");
+            foreach (int number in Original)
+            {
+                Console.WriteLine(number);
+            }
+
+            Console.WriteLine("\nCopied array:");
+            foreach (int number in Copy)
+            {
+                Console.WriteLine(number);
+            }
+
+            #endregion
+
+            #region 
         }
     }
 }
