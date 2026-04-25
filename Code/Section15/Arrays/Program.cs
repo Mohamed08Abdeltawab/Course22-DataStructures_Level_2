@@ -26,7 +26,27 @@ namespace Arrays
             }
             #endregion
 
+            #region Advanced Array Operations
+            // Initializing an array
+            int[] numbers2 = { 5, 3, 1, 4, 2 };
 
+
+            // Sorting the array
+            Array.Sort(numbers2);
+
+            // Display the sorted array
+            Console.WriteLine("Sorted array:");
+            foreach (int number in numbers2)
+            {
+                Console.WriteLine(number);
+            }
+
+
+            // Searching for an element, this will return the index for the element you searched for.
+            int index = Array.IndexOf(numbers2, 4);
+            Console.WriteLine("\nIndex of 4: " + index);
+
+            #endregion
         }
     }
 }
