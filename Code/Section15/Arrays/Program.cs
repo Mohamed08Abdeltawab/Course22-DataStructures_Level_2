@@ -79,6 +79,34 @@ namespace Arrays
             }
 
             #endregion
+
+            #region Advanced LINQ Operations on Arrays
+            var people = new[]
+             {
+                 new { Name = "Alice", Age = 30 },
+                 new { Name = "Bob", Age = 25},
+                 new { Name = "Charlie", Age = 35 },
+                 new { Name = "Diana", Age = 30 },
+                 new { Name = "Ethan", Age = 25 }
+             };
+
+            var groupedByAge = people.GroupBy(p => p.Age)
+                .Select(group => new
+            {
+                Age = group.Key,
+                People = group.OrderBy(p => p.Name).Select(p => p.Name).ToList()
+                });
+
+            foreach (var group in groupedByAge)
+            {
+                Console.WriteLine($"Age Group: {group.Age}");
+                foreach (var person in group.People)//people is list of names for each age group
+                {
+                    Console.WriteLine($" - {person}");
+                }
+            }
+
+            #endregion
         }
     }
 }
