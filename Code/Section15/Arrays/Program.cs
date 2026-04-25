@@ -128,6 +128,43 @@ namespace Arrays
             Console.WriteLine("Count of even numbers: " + countOfEvenNumbers);
 
             #endregion
+
+            #region Advanced LINQ Operations on Arrays - Joining and Projection Introduction to Joining and Projection
+            // Array of employees
+            var employees = new[]
+            {
+                new { Id = 1, Name = "Alice", DepartmentId = 2 },
+                new { Id = 2, Name = "Bob", DepartmentId = 1 }
+            };
+
+
+            // Array of departments
+            var departments = new[]
+            {
+                new { Id = 1, Name = "Human Resources" },
+                new { Id = 2, Name = "Development" }
+            };
+
+            // Joining employees with their respective departments
+            //like inner join in sql, it will create a new when the deptID == emp.DetartmentId then it will create a new object with the employee name and the department name
+            //if not it will not create a new object and it will not be included in the result
+            //if you change id in Department to 3,4 it will not be included in the result because there is no employee with department id 3 or 4 return nothing
+            var employeeDepartments = employees.Join(departments,
+                emp => emp.DepartmentId,// Employee's department ID
+                dept => dept.Id, // Department's ID
+                (emp, dept) => new
+                {
+                    EmployeeName = emp.Name,
+                    DepartmentName = dept.Name
+                });
+
+            Console.WriteLine("\nEmployee Departments:");
+            foreach(var ed in employeeDepartments)
+            {
+                Console.WriteLine($"Employee: {ed.EmployeeName}, Department: {ed.DepartmentName}");
+            }
+
+            #endregion
         }
     }
 }
