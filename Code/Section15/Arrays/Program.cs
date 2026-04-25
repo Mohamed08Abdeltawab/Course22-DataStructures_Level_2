@@ -68,7 +68,17 @@ namespace Arrays
 
             #endregion
 
-            #region 
+            #region uisng linq with arrays ex
+            int [] numbers3 = { 1, 2, 3, 4, 5 };
+            //using linq to filter even numbers from the array
+            var SquarEvenNumbers = numbers3.Where(n => n % 2 == 0).Select(n => n * n);
+            Console.WriteLine("Squares of Even numbers with linq Operation:");
+            foreach (int number in SquarEvenNumbers)
+            {
+                Console.WriteLine(number);
+            }
+
+            #endregion
         }
     }
 }
