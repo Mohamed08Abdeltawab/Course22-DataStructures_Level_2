@@ -107,6 +107,27 @@ namespace Arrays
             }
 
             #endregion
+
+            #region  Advanced LINQ Operations on Arrays - Filtering and Aggregation Introduction to Filtering and Aggregation
+            int[] numbers4 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            var evenNumbers = numbers4.Where(n => n % 2 == 0);
+
+            var sumOfEvenNumbers = evenNumbers.Sum();
+            var averageOfEvenNumbers = evenNumbers.Average();
+            var countOfEvenNumbers = evenNumbers.Count();
+            //var sumOfEvenNumbers = numbers4.Where(n => n % 2 == 0).Sum(); //you can do it in one line without creating a variable for the even numbers
+
+            Console.WriteLine("Even Numbers:");
+            foreach (var number in evenNumbers)
+            {
+                Console.Write(number + " ");
+            }
+            Console.WriteLine("\nSum of even numbers: " + sumOfEvenNumbers);
+            Console.WriteLine("Average of even numbers: " + averageOfEvenNumbers);
+            Console.WriteLine("Count of even numbers: " + countOfEvenNumbers);
+
+            #endregion
         }
     }
 }
