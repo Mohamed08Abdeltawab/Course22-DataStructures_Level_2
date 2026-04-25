@@ -39,5 +39,8 @@ class Program
             // Output: Song B -> Song A -> Song C
             Console.WriteLine(song);
         }
+
+
+        Console.WriteLine(DateTime.Now);
     }
 }
