@@ -158,8 +158,23 @@ namespace Arrays
                     DepartmentName = dept.Name
                 });
 
-            Console.WriteLine("\nEmployee Departments:");
-            foreach(var ed in employeeDepartments)
+            Console.WriteLine("\nEmployee Departments with method syntax:");
+            foreach (var ed in employeeDepartments)
+            {
+                Console.WriteLine($"Employee: {ed.EmployeeName}, Department: {ed.DepartmentName}");
+            }
+
+
+            var employeeDepartments2 = from emp in employees//aliasing is come before Table other than sql
+                                       join dept in departments on emp.DepartmentId equals dept.Id
+                                   select new
+                                   {
+                                       EmployeeName = emp.Name,
+                                       DepartmentName = dept.Name
+                                   };
+
+            Console.WriteLine("\nEmployee Departments with query linq:");
+            foreach (var ed in employeeDepartments)
             {
                 Console.WriteLine($"Employee: {ed.EmployeeName}, Department: {ed.DepartmentName}");
             }
