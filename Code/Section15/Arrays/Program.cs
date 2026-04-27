@@ -174,7 +174,7 @@ namespace Arrays
                                    };
 
             Console.WriteLine("\nEmployee Departments with query linq:");
-            foreach (var ed in employeeDepartments)
+            foreach (var ed in employeeDepartments2)
             {
                 Console.WriteLine($"Employee: {ed.EmployeeName}, Department: {ed.DepartmentName}");
             }
