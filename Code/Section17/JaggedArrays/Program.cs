@@ -43,6 +43,30 @@ namespace JaggedArrays
                 }
                 Console.WriteLine();
             }
+
+            #region using linq with jagged arrays
+            int[][] jaggedArray = {
+            new int[] { 1, 2, 3 },
+            new int[] { 4, 5, 6 },
+            new int[] { 7, 8, 9, 10 }
+        };
+
+            // Using LINQ to flatten the jagged array and calculate the sum of all elements
+            var totalSum = jaggedArray.SelectMany(arr => arr).Sum();
+            Console.WriteLine("Total Sum using Sum method: " + totalSum);
+
+            var MaxValue = jaggedArray.SelectMany(arr => arr).Max();
+            Console.WriteLine("Max Value: " + MaxValue);
+            var MinValue = jaggedArray.SelectMany(arr => arr).Min();
+            Console.WriteLine("Min Value: " + MinValue);
+
+            var FilterElements = jaggedArray.Where(subarr => subarr.Length > 3).Select(arr => arr.First());
+
+            foreach(var element in FilterElements)
+            {
+                Console.WriteLine("First element of sub-arrays with length greater than 3: " +  element);
+            }
+            #endregion
         }
     }
 }
