@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace BitArrays
         }
         static void Main(string[] args)
         {
+            #region BitArray Creation
             //contain 0,1 default value is 0 or false
             BitArray bArr1 = new BitArray(10);
 
@@ -60,6 +62,45 @@ namespace BitArrays
             bool bit1 = bArr4.Get(0);//get the value of the first bit
             int length1 = bArr4.Length;//get the length of the BitArray
             int count1 = bArr4.Count;//get the count of bits in the BitArray
+            #endregion
+
+            #region Bitwise Operators in BitArray
+            BitArray bits1 = new BitArray(new bool[] { true, false, true, false });
+            BitArray bits2 = new BitArray(new bool[] { false, true, false, true });
+
+            Console.WriteLine("\nBits1:");
+            Console.WriteLine(BitArrayToString(bits1));
+
+            Console.WriteLine("Bits2:");
+            Console.WriteLine(BitArrayToString(bits2));
+
+            //and operator
+            BitArray andResult = new BitArray(bits1);
+            andResult.And(bits2);
+            Console.WriteLine("AND Result:");
+            Console.WriteLine(BitArrayToString(andResult));
+
+            //or operator
+            BitArray orResult = new BitArray(bits1);
+            orResult.Or(bits2);
+            Console.WriteLine("OR Result:");
+            Console.WriteLine(BitArrayToString(orResult));
+
+            //xor operator
+            BitArray xorResult = new BitArray(bits1);
+            xorResult.Xor(bits2);
+            Console.WriteLine("XOR Result:");
+            Console.WriteLine(BitArrayToString(xorResult));
+
+            //not operator
+            BitArray notResult = new BitArray(bits1);
+            notResult.Not();
+            Console.WriteLine("NOT Result:");
+            Console.WriteLine(BitArrayToString(notResult));
+
+            #endregion
+
+
         }
     }
 }
