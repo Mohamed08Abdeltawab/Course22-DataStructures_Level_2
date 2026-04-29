@@ -26,6 +26,21 @@ namespace GeneralTree1
             {
                 Children.Add(child);//add element in the list of children
             }
+
+            public TreeNode<T> Find(T value)
+            {
+                if (EqualityComparer<T>.Default.Equals(Value, value))
+                    return this;
+
+                foreach (var child in Children)
+                {
+                    var found = child.Find(value);
+                    if (found != null)
+                        return found;
+                }
+
+                return null; // Not found
+            }
         }
 
         public class Tree<T>
@@ -37,25 +52,48 @@ namespace GeneralTree1
             {
                 Root = new TreeNode<T>(rootValue);
             }
+
+            public void Print(string indent = "")
+            {
+                PrintTree(this.Root, indent);//call the method to print the tree starting from the root
+            }
+
+            private static void PrintTree(TreeNode<T> node, string indent = "")
+            {
+                Console.WriteLine(indent + node.Value);
+                foreach (var child in node.Children)//iterate all element in list
+                {
+                    PrintTree(child, indent + "  ");//recursive call to print child nodes with increased indentation
+                }
+            }
+
+            public TreeNode<T> Find(T value)
+            {
+                return Root?.Find(value);
+            }
+
+
         }
 
 
         static void Main(string[] args)
         {
-            /*
-                        var companyTree = new Tree<string>("CEO");//create a tree with root value "CEO"
-                        var finance = new TreeNode<string>("CFO");//create a node with value "CFO"
-                        var tech = new TreeNode<string>("CTO");//create a node with value "CTO"
-                        var marketing = new TreeNode<string>("CMO");//create a node with value "CMO"
+            #region Company Hierarchy Example
 
-                        companyTree.Root.AddChild(finance);//add CFO as child of CEO
-                        companyTree.Root.AddChild(tech);//add CTO as child of CEO
-                        companyTree.Root.AddChild(marketing);//add CMO as child of CEO
-                        finance.AddChild(new TreeNode<string>("Accountant"));//add Accountant as child of CFO
-                        tech.AddChild(new TreeNode<string>("Developer"));//add Developer as child of CTO
-                        tech.AddChild(new TreeNode<string>("SysAdmin"));//add SysAdmin as child of CTO
-                        marketing.AddChild(new TreeNode<string>("Social Media Manager"));//add Social Media Manager as child of CMO
-            */
+            var companyTree = new Tree<string>("CEO");//create a tree with root value "CEO"
+            var finance = new TreeNode<string>("CFO");//create a node with value "CFO"
+            var tech = new TreeNode<string>("CTO");//create a node with value "CTO"
+            var marketing = new TreeNode<string>("CMO");//create a node with value "CMO"
+
+            companyTree.Root.AddChild(finance);//add CFO as child of CEO
+            companyTree.Root.AddChild(tech);//add CTO as child of CEO
+            companyTree.Root.AddChild(marketing);//add CMO as child of CEO
+            finance.AddChild(new TreeNode<string>("Accountant"));//add Accountant as child of CFO
+            tech.AddChild(new TreeNode<string>("Developer"));//add Developer as child of CTO
+            tech.AddChild(new TreeNode<string>("SysAdmin"));//add SysAdmin as child of CTO
+            marketing.AddChild(new TreeNode<string>("Social Media Manager"));//add Social Media Manager as child of CMO
+
+            #endregion
 
             #region Family Tree Example
 
@@ -120,17 +158,28 @@ namespace GeneralTree1
 
 
 
-            PrintTree(_AliElhamed.Root);//print the tree structure starting from the root
+            #endregion
+
+
+            #region Finding a Node Example
+            // Printing the tree
+            companyTree.Print();
+
+            Console.WriteLine("\nFinding Developer...");
+            if (companyTree.Find("Developer") == null)
+                Console.WriteLine("Not Found :-(");
+            else
+                Console.WriteLine("Found :-)");
+
+            Console.WriteLine("\nFinding DBA...");
+            if (companyTree.Find("DBA") == null)
+                Console.WriteLine("Not Found :-(");
+            else
+                Console.WriteLine("Found :-)");
+
             #endregion
         }
 
-        static void PrintTree<T>(TreeNode<T> node, string indent = "")
-        {
-            Console.WriteLine(indent + node.Value);
-            foreach(var child in node.Children)//iterate all element in list
-            {
-                PrintTree(child, indent + "  ");//recursive call to print child nodes with increased indentation
-            }
-        }
+
     }
 }
