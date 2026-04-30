@@ -124,6 +124,25 @@ namespace BinaryTree1
         }
 
         #endregion
+
+        #region InOrder Traversal
+        private void InOrderTraversal(BinaryTreeNode<T> node)
+        {
+            if (node != null)
+            {
+                InOrderTraversal(node.Left);//traverse left subtree 
+                Console.Write(node.Value + "  ");
+                InOrderTraversal(node.Right);//traverse right subtree
+            }
+        }
+
+        public void InOrder()
+        {
+            Console.WriteLine();
+            InOrderTraversal(Root);
+        }
+
+        #endregion
     }
 
 
@@ -231,9 +250,14 @@ namespace BinaryTree1
 
             tree.PrintTree();
 
+            Console.WriteLine("Pre Order Method:");
             tree.PreOrder();
 
+            Console.WriteLine("\n\nPost Order Method:");
             tree.PostOrder();
+
+            Console.WriteLine("\n\nIn Order Method:");
+            tree.InOrder();
         }
     }
 }
