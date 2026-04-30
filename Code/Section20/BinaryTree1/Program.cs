@@ -105,6 +105,25 @@ namespace BinaryTree1
         }
 
         #endregion
+
+        #region PostOrder Traversal
+        private void PostOrderTraversal(BinaryTreeNode<T> node)
+        {
+            if (node != null)
+            {
+                PostOrderTraversal(node.Left);//traverse left subtree 
+                PostOrderTraversal(node.Right);//traverse right subtree
+                Console.Write(node.Value + "  ");
+            }
+        }
+
+        public void PostOrder()
+        {
+            Console.WriteLine();
+            PostOrderTraversal(Root);
+        }
+
+        #endregion
     }
 
 
@@ -213,6 +232,8 @@ namespace BinaryTree1
             tree.PrintTree();
 
             tree.PreOrder();
+
+            tree.PostOrder();
         }
     }
 }
