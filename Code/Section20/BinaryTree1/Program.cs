@@ -86,6 +86,25 @@ namespace BinaryTree1
                 PrintTreeRecursively(node.Left, level + 1);
             }
         }
+
+        #region Traversal Tree 
+        private void PreOrderTraversal(BinaryTreeNode<T> node)
+        {
+            if(node != null)
+            {
+                Console.Write(node.Value + "  ");
+                PreOrderTraversal(node.Left);//traverse left subtree 
+                PreOrderTraversal(node.Right);//traverse right subtree
+            }
+        }
+
+        public void PreOrder()
+        {
+            Console.WriteLine();
+            PreOrderTraversal(Root);
+        }
+
+        #endregion
     }
 
 
@@ -112,7 +131,7 @@ namespace BinaryTree1
     //         filled before any nodes are added to a new level, 
     //         and each parent node has at most two children before moving on to the next node in the 
     //         sequence.
-            
+
     //         */
 
     //        var newNode = new BinaryTreeNode<T>(value); // Create a new node
@@ -192,6 +211,8 @@ namespace BinaryTree1
             tree.Insert(8);
 
             tree.PrintTree();
+
+            tree.PreOrder();
         }
     }
 }
