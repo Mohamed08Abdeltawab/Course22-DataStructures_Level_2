@@ -29,13 +29,13 @@ namespace GeneralTree1
 
             public TreeNode<T> Find(T value)
             {
-                if (EqualityComparer<T>.Default.Equals(Value, value))
+                if (EqualityComparer<T>.Default.Equals(Value, value))//check if equal the value of this node
                     return this;
 
                 foreach (var child in Children)
                 {
-                    var found = child.Find(value);
-                    if (found != null)
+                    var found = child.Find(value);//if return this will be true if not will be false
+                    if (found != null)//if return this
                         return found;
                 }
 
