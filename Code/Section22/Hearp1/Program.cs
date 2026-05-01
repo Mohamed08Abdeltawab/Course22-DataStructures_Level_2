@@ -40,6 +40,17 @@ namespace Hearp1
             }
             Console.WriteLine();
         }
+
+        // Peek the minimum element without removing it
+        public int Peek()
+        {
+            if (heap.Count == 0)
+            {
+                throw new InvalidOperationException("Heap is empty.");
+            }
+
+            return heap[0]; // The smallest element is at the root
+        }
     }
     internal class Program
     {
@@ -56,6 +67,8 @@ namespace Hearp1
 
             // Display the heap after insertion
             minHeap.DisplayHeap();
+
+            Console.WriteLine(minHeap.Peek());
         }
     }
 }
