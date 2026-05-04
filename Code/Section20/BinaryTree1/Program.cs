@@ -143,6 +143,35 @@ namespace BinaryTree1
         }
 
         #endregion
+
+        #region Level-order Traversal (BFS) in C#
+        public void LevelOrder()
+        {
+            if(Root == null)
+            {
+                return;
+            }
+
+            Queue<BinaryTreeNode<T>> queue = new Queue<BinaryTreeNode<T>>();
+            queue.Enqueue(Root);
+
+            while(queue.Count > 0)
+            {
+                BinaryTreeNode<T> current = queue.Dequeue();
+                Console.Write(current.Value + "  ");
+
+                if(current.Left != null)
+                {
+                    queue.Enqueue(current.Left);
+                }
+                if(current.Right != null)
+                {
+                    queue.Enqueue(current.Right);
+                }
+            }
+        }
+
+        #endregion
     }
 
 
@@ -258,6 +287,10 @@ namespace BinaryTree1
 
             Console.WriteLine("\n\nIn Order Method:");
             tree.InOrder();
+
+            Console.WriteLine("\n\nLevel Order Method:");
+            tree.LevelOrder();
+    
         }
     }
 }
